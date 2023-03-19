@@ -1,0 +1,100 @@
+@font-face {
+  font-family: Odin;
+  src: url("./fonts/Norse-Bold.otf");
+}
+body {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+}
+.side_image {
+  width: 40vw;
+  height: 100vh;
+  position: relative;
+  background-image: url("./Images/parrot.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.logo {
+  position: relative;
+  top: 20vh;
+  background-color: rgb(50,50,50, 0.5);
+  display: flex;
+
+  justify-content: center;
+  height: 10vh;
+}
+.main{
+  width: 60vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url("./Images/leaves.jpg");
+  background-size: cover;
+  justify-content: center;
+}
+.bird_Text {
+  font-family: Odin;
+  font-size: 3rem;
+  margin: 0% 1vw;
+  margin-top: 0.5vh;
+  color: white;
+}
+#create_account {
+  background-color: #596D48;
+  border-radius: 5px;
+  border-color: blue;
+  color: white;
+}
+.bird_field {
+  background-color: white;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.bird_field > span {
+  position: relative;
+  right: -15vw;
+  font-size: 2rem;
+}
+#bird_form {
+  background-color: lightgrey;
+  opacity: 0.9;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+}
+li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+button{
+  position: relative;
+  top: 1vh;
+  left: 2vw;
+  padding: 0.5rem 1rem;
+}
+a {
+  text-decoration: none;
+  color: green;
+  font-weight: bold;
+}
+input {
+  outline: none;
+  border-color: #E5E7EB;
+  border-radius: 5px;
+}
+input:focus {
+  background-color: lightblue;
+}
+input:valid {
+  border-color: green;
+}
+.error {
+  border-color: red;
+}

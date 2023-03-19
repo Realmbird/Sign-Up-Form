@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="validation.js"></script>
+</head>
+<body>
+  <div class="side_image">
+    <div class="logo">
+      <img src="./Images/odin-lined.png" alt="Odin">
+      <p class = "bird_Text">Realmbird</p>
+    </div>
+  </div>
+  <div class="main">
+    <form action="" method="post" id = "bird_form">
+      <fieldset class="bird_field">
+        <span>Let's do this!</span>
+        <div id="1">
+          <ul>
+            <li>
+             <label for="first_name">First Name</label>
+             <input type="text" id = "first_name" name = "first_name" placeholder="Parrot" required>
+            </li>
+            <li>
+              <label for="last_name">Last Name</label>
+             <input type="text" id = "last_name" name = "last_name" placeholder="Psittaciformes" required>
+            </li>
+          </ul>
+        </div>
+        <div id="2">
+          <ul>
+            <li>
+              <label for="user_email">Email with Bird</label>
+              <input type="email" id = "user_email" name = "user_email" placeholder="email@bird.com" pattern = ".+@bird\.com" required>
+            </li>
+            <li>
+              <label for="Phone_number">Phone Number</label>
+              <input type="tel" id = "Phone_number" name = "Phone_number" pattern = "[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="310-944-7544" required>
+            </li>
+          </ul>
+        </div>
+        <div id="3">
+          <ul>
+            <li>
+              <label for="password">Password</label>
+              <input type="password" id="password" name = "password" required>
+            </li>
+            <li>
+              <label for="confirm_password">Confirm Password</label>
+              <input type="password" id = "confirm_password" name = "confirm_password" required>
+            </li>
+          </ul>
+        </div>
+      </fieldset>
+      <button type = "submit" id = "create_account">Create Accound</button>
+      <p>Already have an account? <a href = "#">Log in</a></p>
+    </form> 
+  </div>
+</body>
+</html>
